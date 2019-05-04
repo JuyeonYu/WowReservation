@@ -12,9 +12,12 @@
 		B2E13A2D227D42F0005A3391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E13A2B227D42F0005A3391 /* Main.storyboard */; };
 		B2E13A2F227D42F1005A3391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E13A2E227D42F1005A3391 /* Assets.xcassets */; };
 		B2E13A32227D42F1005A3391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E13A30227D42F1005A3391 /* LaunchScreen.storyboard */; };
+		D9280702987BFCFDAE23C38C /* Pods_WowReservation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowReservation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C8A4EBD61B13699067A948 /* Pods-WowReservation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowReservation.debug.xcconfig"; path = "Target Support Files/Pods-WowReservation/Pods-WowReservation.debug.xcconfig"; sourceTree = "<group>"; };
 		B2E13A24227D42F0005A3391 /* WowReservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowReservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E13A27227D42F0005A3391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E13A29227D42F0005A3391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B2E13A2E227D42F1005A3391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2E13A31227D42F1005A3391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2E13A33227D42F1005A3391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C609EEE6CE29F7158EB2CB59 /* Pods-WowReservation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowReservation.release.xcconfig"; path = "Target Support Files/Pods-WowReservation/Pods-WowReservation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9280702987BFCFDAE23C38C /* Pods_WowReservation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050C2C05A270F7BFE061D541 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55C8A4EBD61B13699067A948 /* Pods-WowReservation.debug.xcconfig */,
+				C609EEE6CE29F7158EB2CB59 /* Pods-WowReservation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B2E13A1B227D42F0005A3391 = {
 			isa = PBXGroup;
 			children = (
 				B2E13A26227D42F0005A3391 /* WowReservation */,
 				B2E13A25227D42F0005A3391 /* Products */,
+				050C2C05A270F7BFE061D541 /* Pods */,
+				DAC9A65230D68869E2F88DC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = WowReservation;
 			sourceTree = "<group>";
 		};
+		DAC9A65230D68869E2F88DC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2E13A36227D42F1005A3391 /* Build configuration list for PBXNativeTarget "WowReservation" */;
 			buildPhases = (
+				2141BA96FA113E13F4F87403 /* [CP] Check Pods Manifest.lock */,
 				B2E13A20227D42F0005A3391 /* Sources */,
 				B2E13A21227D42F0005A3391 /* Frameworks */,
 				B2E13A22227D42F0005A3391 /* Resources */,
+				0E888EF66A1318F74F51252E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E888EF66A1318F74F51252E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WowReservation/Pods-WowReservation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WowReservation/Pods-WowReservation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2141BA96FA113E13F4F87403 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WowReservation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2E13A20227D42F0005A3391 /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		B2E13A37227D42F1005A3391 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C8A4EBD61B13699067A948 /* Pods-WowReservation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +373,7 @@
 		};
 		B2E13A38227D42F1005A3391 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C609EEE6CE29F7158EB2CB59 /* Pods-WowReservation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
