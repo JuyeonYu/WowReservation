@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B29B8122227EB91C00AACD85 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B8121227EB91C00AACD85 /* HomeController.swift */; };
 		B2E13A28227D42F0005A3391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E13A27227D42F0005A3391 /* AppDelegate.swift */; };
 		B2E13A2A227D42F0005A3391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E13A29227D42F0005A3391 /* ViewController.swift */; };
 		B2E13A2D227D42F0005A3391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E13A2B227D42F0005A3391 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowReservation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C8A4EBD61B13699067A948 /* Pods-WowReservation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowReservation.debug.xcconfig"; path = "Target Support Files/Pods-WowReservation/Pods-WowReservation.debug.xcconfig"; sourceTree = "<group>"; };
+		B29B8121227EB91C00AACD85 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		B2E13A24227D42F0005A3391 /* WowReservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowReservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E13A27227D42F0005A3391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E13A29227D42F0005A3391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,8 +48,15 @@
 				55C8A4EBD61B13699067A948 /* Pods-WowReservation.debug.xcconfig */,
 				C609EEE6CE29F7158EB2CB59 /* Pods-WowReservation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B29B8120227EB8E000AACD85 /* MainTabs */ = {
+			isa = PBXGroup;
+			children = (
+				B29B8121227EB91C00AACD85 /* HomeController.swift */,
+			);
+			path = MainTabs;
 			sourceTree = "<group>";
 		};
 		B2E13A1B227D42F0005A3391 = {
@@ -71,6 +80,7 @@
 		B2E13A26227D42F0005A3391 /* WowReservation */ = {
 			isa = PBXGroup;
 			children = (
+				B29B8120227EB8E000AACD85 /* MainTabs */,
 				B2E13A27227D42F0005A3391 /* AppDelegate.swift */,
 				B2E13A29227D42F0005A3391 /* ViewController.swift */,
 				B2E13A2B227D42F0005A3391 /* Main.storyboard */,
@@ -211,6 +221,7 @@
 			files = (
 				B2E13A2A227D42F0005A3391 /* ViewController.swift in Sources */,
 				B2E13A28227D42F0005A3391 /* AppDelegate.swift in Sources */,
+				B29B8122227EB91C00AACD85 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
