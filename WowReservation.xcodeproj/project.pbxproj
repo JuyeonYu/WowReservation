@@ -13,6 +13,7 @@
 		B2E13A2D227D42F0005A3391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E13A2B227D42F0005A3391 /* Main.storyboard */; };
 		B2E13A2F227D42F1005A3391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E13A2E227D42F1005A3391 /* Assets.xcassets */; };
 		B2E13A32227D42F1005A3391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E13A30227D42F1005A3391 /* LaunchScreen.storyboard */; };
+		B2E7ECE4227FFD8D0037B8D1 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7ECE3227FFD8D0037B8D1 /* ClassCell.swift */; };
 		D9280702987BFCFDAE23C38C /* Pods_WowReservation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		B2E13A2E227D42F1005A3391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2E13A31227D42F1005A3391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2E13A33227D42F1005A3391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E7ECE3227FFD8D0037B8D1 /* ClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
 		C609EEE6CE29F7158EB2CB59 /* Pods-WowReservation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowReservation.release.xcconfig"; path = "Target Support Files/Pods-WowReservation/Pods-WowReservation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,14 @@
 			path = MainTabs;
 			sourceTree = "<group>";
 		};
+		B29B8123227EC89F00AACD85 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B2E7ECE3227FFD8D0037B8D1 /* ClassCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B2E13A1B227D42F0005A3391 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		B2E13A26227D42F0005A3391 /* WowReservation */ = {
 			isa = PBXGroup;
 			children = (
+				B29B8123227EC89F00AACD85 /* Cell */,
 				B29B8120227EB8E000AACD85 /* MainTabs */,
 				B2E13A27227D42F0005A3391 /* AppDelegate.swift */,
 				B2E13A29227D42F0005A3391 /* ViewController.swift */,
@@ -221,6 +232,7 @@
 			files = (
 				B2E13A2A227D42F0005A3391 /* ViewController.swift in Sources */,
 				B2E13A28227D42F0005A3391 /* AppDelegate.swift in Sources */,
+				B2E7ECE4227FFD8D0037B8D1 /* ClassCell.swift in Sources */,
 				B29B8122227EB91C00AACD85 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

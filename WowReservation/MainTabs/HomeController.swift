@@ -11,12 +11,13 @@ import FSCalendar
 
 class HomeController: UIViewController {
     @IBOutlet weak var calendar: FSCalendar!
-    @IBOutlet weak var timeTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
-        calendar.scrollDirection = .vertical
         
+        // config calendasr
+        calendar.scrollDirection = .vertical
+
 //         주간 모드로 변경
 //        calendar.scope = .week
 //        calendar.allowsMultipleSelection = true;
