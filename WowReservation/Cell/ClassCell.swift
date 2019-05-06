@@ -13,12 +13,16 @@ class ClassCell: UITableViewCell {
     @IBOutlet weak var trainerName: UILabel!
     @IBOutlet weak var classTitle: UILabel!
     @IBOutlet weak var participatingNumber: UILabel!
-    @IBOutlet weak var clssTime: UILabel!
+    @IBOutlet weak var classTime: UILabel!
+    
     @IBOutlet weak var changeTimeButton: UIButton!
     @IBOutlet weak var reservationButton: UIButton!
     
     @IBAction func didTabChangeTime(_ sender: Any) {
+        print("didTabChangeTime")
     }
     @IBAction func didTabReservation(_ sender: Any) {
+        print("didTabReservation")
     }
 }
+
