@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2147E5D22816E35007B22B8 /* classTimeVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2147E5C22816E35007B22B8 /* classTimeVO.swift */; };
 		B29B8122227EB91C00AACD85 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B8121227EB91C00AACD85 /* HomeController.swift */; };
 		B2E13A28227D42F0005A3391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E13A27227D42F0005A3391 /* AppDelegate.swift */; };
 		B2E13A2A227D42F0005A3391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E13A29227D42F0005A3391 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowReservation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C8A4EBD61B13699067A948 /* Pods-WowReservation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowReservation.debug.xcconfig"; path = "Target Support Files/Pods-WowReservation/Pods-WowReservation.debug.xcconfig"; sourceTree = "<group>"; };
+		B2147E5C22816E35007B22B8 /* classTimeVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classTimeVO.swift; sourceTree = "<group>"; };
 		B29B8121227EB91C00AACD85 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		B2E13A24227D42F0005A3391 /* WowReservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowReservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E13A27227D42F0005A3391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				B2E13A2E227D42F1005A3391 /* Assets.xcassets */,
 				B2E13A30227D42F1005A3391 /* LaunchScreen.storyboard */,
 				B2E13A33227D42F1005A3391 /* Info.plist */,
+				B2147E5C22816E35007B22B8 /* classTimeVO.swift */,
 			);
 			path = WowReservation;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E13A2A227D42F0005A3391 /* ViewController.swift in Sources */,
+				B2147E5D22816E35007B22B8 /* classTimeVO.swift in Sources */,
 				B2E13A28227D42F0005A3391 /* AppDelegate.swift in Sources */,
 				B2E7ECE4227FFD8D0037B8D1 /* ClassCell.swift in Sources */,
 				B29B8122227EB91C00AACD85 /* HomeController.swift in Sources */,
