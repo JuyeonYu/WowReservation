@@ -9,6 +9,8 @@
 import UIKit
 
 class ClassCell: UITableViewCell {
+    var isReservation: Bool = false
+
     @IBOutlet weak var trainerProfile: UIImageView!
     @IBOutlet weak var trainerName: UILabel!
     @IBOutlet weak var classTitle: UILabel!
@@ -17,17 +19,24 @@ class ClassCell: UITableViewCell {
     
     @IBOutlet weak var changeTimeButton: UIButton!
     @IBOutlet weak var reservationButton: UIButton!
+    @IBOutlet weak var cancilReservationButton: UIButton!
     
     weak var classCellDelegate: ClassCellDelegate?
     
     @IBAction func didTabChangeTime(_ sender: Any) {
         print("didTabChangeTime")
+        classCellDelegate?.didTabChangeTime(cell: self)
     }
     @IBAction func didTabReservation(_ sender: Any) {
         classCellDelegate?.didTabReservation(cell: self)
+    }
+    @IBAction func didTabCancilReservation(_ sender: Any) {
+        classCellDelegate?.didTabCancilReservation(cell: self)
     }
 }
 
 protocol ClassCellDelegate: class {
     func didTabReservation(cell: ClassCell)
+    func didTabCancilReservation(cell: ClassCell)
+    func didTabChangeTime(cell: ClassCell)
 }

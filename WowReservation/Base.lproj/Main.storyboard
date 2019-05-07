@@ -139,9 +139,18 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yp-wh-Inn">
+                                                    <rect key="frame" x="308" y="72" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="취소"/>
+                                                    <connections>
+                                                        <action selector="didTabCancilReservation:" destination="Qu3-yt-iqB" eventType="touchUpInside" id="TQe-sj-HoC"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cancilReservationButton" destination="2Yp-wh-Inn" id="9EJ-ei-7Ei"/>
                                             <outlet property="changeTimeButton" destination="PZF-qZ-Gwl" id="bxd-Zi-QsW"/>
                                             <outlet property="classTime" destination="NIH-QW-EoP" id="v27-XJ-VLW"/>
                                             <outlet property="classTitle" destination="3Qq-bx-3BC" id="mz8-kV-q1n"/>
