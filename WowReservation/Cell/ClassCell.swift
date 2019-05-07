@@ -18,11 +18,16 @@ class ClassCell: UITableViewCell {
     @IBOutlet weak var changeTimeButton: UIButton!
     @IBOutlet weak var reservationButton: UIButton!
     
+    weak var classCellDelegate: ClassCellDelegate?
+    
     @IBAction func didTabChangeTime(_ sender: Any) {
         print("didTabChangeTime")
     }
     @IBAction func didTabReservation(_ sender: Any) {
-        print("didTabReservation")
+        classCellDelegate?.didTabReservation(cell: self)
     }
 }
 
+protocol ClassCellDelegate: class {
+    func didTabReservation(cell: ClassCell)
+}
