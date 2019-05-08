@@ -92,6 +92,7 @@
 		B2E13A26227D42F0005A3391 /* WowReservation */ = {
 			isa = PBXGroup;
 			children = (
+				B2EA5FBD228270E800A0F8C6 /* VO */,
 				B29B8123227EC89F00AACD85 /* Cell */,
 				B29B8120227EB8E000AACD85 /* MainTabs */,
 				B2E13A27227D42F0005A3391 /* AppDelegate.swift */,
@@ -100,9 +101,16 @@
 				B2E13A2E227D42F1005A3391 /* Assets.xcassets */,
 				B2E13A30227D42F1005A3391 /* LaunchScreen.storyboard */,
 				B2E13A33227D42F1005A3391 /* Info.plist */,
-				B2147E5C22816E35007B22B8 /* classTimeVO.swift */,
 			);
 			path = WowReservation;
+			sourceTree = "<group>";
+		};
+		B2EA5FBD228270E800A0F8C6 /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				B2147E5C22816E35007B22B8 /* classTimeVO.swift */,
+			);
+			path = VO;
 			sourceTree = "<group>";
 		};
 		DAC9A65230D68869E2F88DC0 /* Frameworks */ = {
