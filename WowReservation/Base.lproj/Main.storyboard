@@ -110,14 +110,6 @@
                                                         <action selector="didTabReservation:" destination="Qu3-yt-iqB" eventType="touchUpInside" id="d54-Gq-egP"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZF-qZ-Gwl">
-                                                    <rect key="frame" x="244" y="72" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="변경"/>
-                                                    <connections>
-                                                        <action selector="didTabChangeTime:" destination="Qu3-yt-iqB" eventType="touchUpInside" id="RGE-vS-PP4"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="지옥에서 온 다이어트 PT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qq-bx-3BC">
                                                     <rect key="frame" x="58" y="11" width="167" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -151,7 +143,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="cancilReservationButton" destination="2Yp-wh-Inn" id="9EJ-ei-7Ei"/>
-                                            <outlet property="changeTimeButton" destination="PZF-qZ-Gwl" id="bxd-Zi-QsW"/>
                                             <outlet property="classTime" destination="NIH-QW-EoP" id="v27-XJ-VLW"/>
                                             <outlet property="classTitle" destination="3Qq-bx-3BC" id="mz8-kV-q1n"/>
                                             <outlet property="participatingNumber" destination="7gP-5O-7la" id="cko-dT-cpw"/>

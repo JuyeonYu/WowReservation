@@ -16,6 +16,7 @@ class ClassTimeVO {
     var trainerProfileURL: String?
     var trainerName: String?
     
+    var date: String?
     var startTime: Double?
     var endTime: Double?
 
