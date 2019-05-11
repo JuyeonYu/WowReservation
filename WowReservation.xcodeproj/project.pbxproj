@@ -63,6 +63,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B20C68E52286C91800993DBE /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				B2147E5C22816E35007B22B8 /* classTimeVO.swift */,
+				B2FC86DE22867F4E00F6D4F6 /* AlertVO.swift */,
+			);
+			path = VO;
+			sourceTree = "<group>";
+		};
 		B29B8120227EB8E000AACD85 /* MainTabs */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +112,7 @@
 		B2E13A26227D42F0005A3391 /* WowReservation */ = {
 			isa = PBXGroup;
 			children = (
+				B20C68E52286C91800993DBE /* VO */,
 				B29B8123227EC89F00AACD85 /* Cell */,
 				B29B8120227EB8E000AACD85 /* MainTabs */,
 				B2E13A27227D42F0005A3391 /* AppDelegate.swift */,
@@ -111,8 +121,6 @@
 				B2E13A2E227D42F1005A3391 /* Assets.xcassets */,
 				B2E13A30227D42F1005A3391 /* LaunchScreen.storyboard */,
 				B2E13A33227D42F1005A3391 /* Info.plist */,
-				B2147E5C22816E35007B22B8 /* classTimeVO.swift */,
-				B2FC86DE22867F4E00F6D4F6 /* AlertVO.swift */,
 			);
 			path = WowReservation;
 			sourceTree = "<group>";
