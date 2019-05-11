@@ -34,6 +34,7 @@ class HomeController: UIViewController {
         for i in 1 ... 9 {
             let classTimeVO = ClassTimeVO()
             classTimeVO.title = "헬게이트 오픈 PT\(i)"
+            classTimeVO.trainerName = "김종국"
             classTimeVOList.append(classTimeVO)
         }
         
@@ -56,7 +57,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         let row = indexPath.row
         
         cell.classCellDelegate = self
-        cell.trainerName.text = "김이박"
+        cell.trainerName.text = classTimeVOList[row].trainerName
         cell.classTitle.text = classTimeVOList[row].title
         cell.tag = indexPath.row
 
@@ -65,11 +66,9 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         
         if classTimeVOList[cell.tag].isReservation {
             cell.cancilReservationButton.isHidden = false
-            cell.changeTimeButton.isHidden = false
             cell.reservationButton.isHidden = true
         } else {
             cell.cancilReservationButton.isHidden = true
-            cell.changeTimeButton.isHidden = true
             cell.reservationButton.isHidden = false
         }
         return cell
@@ -93,9 +92,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension HomeController: ClassCellDelegate {
-    func didTabChangeTime(cell: ClassCell) {
-        print("didTabChangeTime")
-    }
+
     
     func didTabCancilReservation(cell: ClassCell) {
         let alert = UIAlertController(title: "예약을 취소할까요?", message: "", preferredStyle: .alert)
@@ -103,7 +100,6 @@ extension HomeController: ClassCellDelegate {
             self.classTimeVOList[cell.tag].isReservation = false
             cell.isReservation = false
             cell.cancilReservationButton.isHidden = true
-            cell.changeTimeButton.isHidden = true
             cell.reservationButton.isHidden = false
         })
         alert.addAction(UIAlertAction(title: "아니오", style: .cancel, handler: nil))
@@ -119,7 +115,6 @@ extension HomeController: ClassCellDelegate {
 
             cell.isReservation = true
             cell.cancilReservationButton.isHidden = false
-            cell.changeTimeButton.isHidden = false
             cell.reservationButton.isHidden = true
             
         })
