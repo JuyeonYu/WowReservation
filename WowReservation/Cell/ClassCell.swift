@@ -17,16 +17,11 @@ class ClassCell: UITableViewCell {
     @IBOutlet weak var participatingNumber: UILabel!
     @IBOutlet weak var classTime: UILabel!
     
-    @IBOutlet weak var changeTimeButton: UIButton!
     @IBOutlet weak var reservationButton: UIButton!
     @IBOutlet weak var cancilReservationButton: UIButton!
         
     weak var classCellDelegate: ClassCellDelegate?
     
-    @IBAction func didTabChangeTime(_ sender: Any) {
-        print("didTabChangeTime")
-        classCellDelegate?.didTabChangeTime(cell: self)
-    }
     @IBAction func didTabReservation(_ sender: Any) {
         classCellDelegate?.didTabReservation(cell: self)
     }
@@ -54,5 +49,4 @@ class ClassCell: UITableViewCell {
 protocol ClassCellDelegate: class {
     func didTabReservation(cell: ClassCell)
     func didTabCancilReservation(cell: ClassCell)
-    func didTabChangeTime(cell: ClassCell)
 }

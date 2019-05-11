@@ -15,6 +15,10 @@
 		B2E13A2F227D42F1005A3391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E13A2E227D42F1005A3391 /* Assets.xcassets */; };
 		B2E13A32227D42F1005A3391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E13A30227D42F1005A3391 /* LaunchScreen.storyboard */; };
 		B2E7ECE4227FFD8D0037B8D1 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7ECE3227FFD8D0037B8D1 /* ClassCell.swift */; };
+		B2FC86D922867C5D00F6D4F6 /* AlertListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86D822867C5D00F6D4F6 /* AlertListController.swift */; };
+		B2FC86DB22867CCE00F6D4F6 /* AlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86DA22867CCE00F6D4F6 /* AlertCell.swift */; };
+		B2FC86DF22867F4E00F6D4F6 /* AlertVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86DE22867F4E00F6D4F6 /* AlertVO.swift */; };
+		B2FC86E122868B9800F6D4F6 /* MoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86E022868B9800F6D4F6 /* MoreController.swift */; };
 		D9280702987BFCFDAE23C38C /* Pods_WowReservation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,10 @@
 		B2E13A31227D42F1005A3391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2E13A33227D42F1005A3391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2E7ECE3227FFD8D0037B8D1 /* ClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
+		B2FC86D822867C5D00F6D4F6 /* AlertListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListController.swift; sourceTree = "<group>"; };
+		B2FC86DA22867CCE00F6D4F6 /* AlertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCell.swift; sourceTree = "<group>"; };
+		B2FC86DE22867F4E00F6D4F6 /* AlertVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVO.swift; sourceTree = "<group>"; };
+		B2FC86E022868B9800F6D4F6 /* MoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreController.swift; sourceTree = "<group>"; };
 		C609EEE6CE29F7158EB2CB59 /* Pods-WowReservation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowReservation.release.xcconfig"; path = "Target Support Files/Pods-WowReservation/Pods-WowReservation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				B29B8121227EB91C00AACD85 /* HomeController.swift */,
+				B2FC86D822867C5D00F6D4F6 /* AlertListController.swift */,
+				B2FC86E022868B9800F6D4F6 /* MoreController.swift */,
 			);
 			path = MainTabs;
 			sourceTree = "<group>";
@@ -67,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				B2E7ECE3227FFD8D0037B8D1 /* ClassCell.swift */,
+				B2FC86DA22867CCE00F6D4F6 /* AlertCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -101,6 +112,7 @@
 				B2E13A30227D42F1005A3391 /* LaunchScreen.storyboard */,
 				B2E13A33227D42F1005A3391 /* Info.plist */,
 				B2147E5C22816E35007B22B8 /* classTimeVO.swift */,
+				B2FC86DE22867F4E00F6D4F6 /* AlertVO.swift */,
 			);
 			path = WowReservation;
 			sourceTree = "<group>";
@@ -233,9 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FC86DB22867CCE00F6D4F6 /* AlertCell.swift in Sources */,
 				B2E13A2A227D42F0005A3391 /* ViewController.swift in Sources */,
 				B2147E5D22816E35007B22B8 /* classTimeVO.swift in Sources */,
+				B2FC86D922867C5D00F6D4F6 /* AlertListController.swift in Sources */,
+				B2FC86E122868B9800F6D4F6 /* MoreController.swift in Sources */,
 				B2E13A28227D42F0005A3391 /* AppDelegate.swift in Sources */,
+				B2FC86DF22867F4E00F6D4F6 /* AlertVO.swift in Sources */,
 				B2E7ECE4227FFD8D0037B8D1 /* ClassCell.swift in Sources */,
 				B29B8122227EB91C00AACD85 /* HomeController.swift in Sources */,
 			);
