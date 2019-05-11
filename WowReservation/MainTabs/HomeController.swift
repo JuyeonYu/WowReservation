@@ -34,7 +34,6 @@ class HomeController: UIViewController {
         for i in 1 ... 9 {
             let classTimeVO = ClassTimeVO()
             classTimeVO.title = "헬게이트 오픈 PT\(i)"
-            classTimeVO.trainerName = "김종국"
             classTimeVOList.append(classTimeVO)
         }
         
@@ -57,7 +56,6 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         let row = indexPath.row
         
         cell.classCellDelegate = self
-        cell.trainerName.text = classTimeVOList[row].trainerName
         cell.classTitle.text = classTimeVOList[row].title
         cell.tag = indexPath.row
 
