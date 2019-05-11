@@ -10,5 +10,15 @@ import Foundation
 
 class ClassTimeVO {
     var title: String?
+    var participatingMember: Int?
+    var limitMember: Int?
+
+    var trainerProfileURL: String?
+    var trainerName: String?
+    
+    var date: String?
+    var startTime: Double?
+    var endTime: Double?
+
     var isReservation: Bool = false
 }

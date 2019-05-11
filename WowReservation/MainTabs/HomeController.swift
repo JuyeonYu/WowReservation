@@ -13,15 +13,17 @@ class HomeController: UIViewController {
     @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet weak var classTimeTableview: UITableView!
     @IBOutlet weak var weekOrMonth: UISegmentedControl!
-//    var isReservation: [String:Bool]?
-    
-    var classTimeVOList = [ClassTimeVO]()
+    let dateFormatter = DateFormatter()
 
+    var classTimeVOList = [ClassTimeVO]()
+    var classListEachDay = [String : [ClassTimeVO]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // config calendasr
         calendar.scrollDirection = .vertical
+        dateFormatter.dateStyle = .short
         
         //config classTimeTableview
         classTimeTableview.showsVerticalScrollIndicator = false
@@ -31,22 +33,35 @@ class HomeController: UIViewController {
 //        calendar.scope = .week
 //        calendar.allowsMultipleSelection = true;
         
+        
+        // 더미 삽입
         for i in 1 ... 9 {
             let classTimeVO = ClassTimeVO()
             classTimeVO.title = "헬게이트 오픈 PT\(i)"
+            classTimeVO.trainerName = "김종국"
+            classTimeVO.trainerProfileURL = "profile"
             classTimeVOList.append(classTimeVO)
         }
         
-        print("리스트 갯수는 \(classTimeVOList.count)")
-    }
-    
-    @IBAction func didTabTodaysWork(_ sender: Any) {
+        classListEachDay["5/11/19"] = classTimeVOList
+        classTimeVOList.removeAll()
+
+        for i in 1 ... 9 {
+            let classTimeVO = ClassTimeVO()
+            classTimeVO.title = "군대식 다이어트\(i)"
+            classTimeVO.trainerName = "대니강"
+            classTimeVO.trainerProfileURL = "danny"
+
+            classTimeVOList.append(classTimeVO)
+        }
+        classListEachDay["5/12/19"] = classTimeVOList
     }
 }
 
 extension HomeController: FSCalendarDelegate {
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         print("didSelect: \(date)")
+        self.classTimeTableview.reloadData()
     }
 }
 
@@ -55,12 +70,18 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "classCell", for: indexPath) as! ClassCell
         let row = indexPath.row
         
+        let selectedDate = dateFormatter.string(from: self.calendar.selectedDate ?? self.calendar.today!)
+        print(selectedDate)
+        
         cell.classCellDelegate = self
         cell.classTitle.text = classTimeVOList[row].title
+        cell.trainerName.text = classListEachDay[selectedDate]?[row].trainerName
+        cell.classTitle.text = classListEachDay[selectedDate]?[row].title
+        cell.trainerProfile.image = UIImage(named:classListEachDay[selectedDate]?[row].trainerProfileURL ?? "")
+
         cell.tag = indexPath.row
 
         cell.classTime.text = "PM 8:30 ~ 9:30"
-        cell.trainerProfile.image = UIImage(named: "profile")
         
         if classTimeVOList[cell.tag].isReservation {
             cell.cancilReservationButton.isHidden = false
