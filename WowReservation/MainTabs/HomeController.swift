@@ -47,6 +47,7 @@ class HomeController: UIViewController {
 extension HomeController: FSCalendarDelegate {
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         print("didSelect: \(date)")
+        self.classTimeTableview.reloadData()
     }
 }
 
@@ -54,6 +55,10 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "classCell", for: indexPath) as! ClassCell
         let row = indexPath.row
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        let selectedDate = dateFormatter.string(from: self.calendar.today ?? self.calendar.today!)
         
         cell.classCellDelegate = self
         cell.trainerName.text = "김이박"
