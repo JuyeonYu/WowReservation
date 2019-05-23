@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class AlertVO {
+class AlertModel {
     var isRead: Bool?
     var profileImage: String?
     var alertImage: String?

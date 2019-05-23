@@ -27,23 +27,7 @@ class ClassCell: UITableViewCell {
     }
     @IBAction func didTabCancilReservation(_ sender: Any) {
         classCellDelegate?.didTabCancilReservation(cell: self)
-    }
-    
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//    }
-//
-//    override func prepareForReuse() {
-//        super.prepareForReuse()
-//        trainerProfile = nil
-//        trainerName = nil
-//        classTime = nil
-//        participatingNumber = nil
-//        classTitle = nil
-//        cancilReservationButton = nil
-//        reservationButton = nil
-//        changeTimeButton = nil
-//    }
+    }    
 }
 
 protocol ClassCellDelegate: class {

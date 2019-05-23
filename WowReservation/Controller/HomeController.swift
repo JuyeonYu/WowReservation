@@ -15,12 +15,23 @@ class HomeController: UIViewController {
     @IBOutlet weak var weekOrMonth: UISegmentedControl!
     let dateFormatter = DateFormatter()
 
-    var classTimeVOList = [ClassTimeVO]()
-    var classListEachDay = [String : [ClassTimeVO]]()
-    
+    var classModelList = [ClassModel]()
+    var classListEachDay = [String : [ClassModel]]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let cal = Calendar.current
+
+/*
+         날짜별로 각기 다른 클래스를 테이블뷰로 조회해야함
+         
+         테이블뷰 생성 로직
+         1. view 생성
+         2. 모델 생성
+         3. 모델 리스트 생성
+         4. 모델 리스트에 값 세팅
+         5. 날짜 별 모델 리스트 생성 [string(날짜):[model]] 형식으로 만듦
+*/
         // config calendasr
         calendar.scrollDirection = .vertical
         dateFormatter.dateStyle = .short
@@ -36,25 +47,25 @@ class HomeController: UIViewController {
         
         // 더미 삽입
         for i in 1 ... 9 {
-            let classTimeVO = ClassTimeVO()
-            classTimeVO.title = "헬게이트 오픈 PT\(i)"
-            classTimeVO.trainerName = "김종국"
-            classTimeVO.trainerProfileURL = "profile"
-            classTimeVOList.append(classTimeVO)
+            let classModel = ClassModel()
+            classModel.title = "헬게이트 오픈 PT\(i)"
+            classModel.trainerName = "김종국"
+            classModel.trainerProfileURL = "profile"
+            classModelList.append(classModel)
         }
         
-        classListEachDay["5/11/19"] = classTimeVOList
-        classTimeVOList.removeAll()
+        classListEachDay["23/05/2019"] = classModelList
+        classModelList.removeAll()
 
         for i in 1 ... 9 {
-            let classTimeVO = ClassTimeVO()
-            classTimeVO.title = "군대식 다이어트\(i)"
-            classTimeVO.trainerName = "대니강"
-            classTimeVO.trainerProfileURL = "danny"
+            let classModel = ClassModel()
+            classModel.title = "군대식 다이어트\(i)"
+            classModel.trainerName = "대니강"
+            classModel.trainerProfileURL = "danny"
 
-            classTimeVOList.append(classTimeVO)
+            classModelList.append(classModel)
         }
-        classListEachDay["5/12/19"] = classTimeVOList
+        classListEachDay["22/05/2019"] = classModelList
     }
 }
 
@@ -71,19 +82,17 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         let row = indexPath.row
         
         let selectedDate = dateFormatter.string(from: self.calendar.selectedDate ?? self.calendar.today!)
-        print(selectedDate)
         
         cell.classCellDelegate = self
-        cell.classTitle.text = classTimeVOList[row].title
-        cell.trainerName.text = classListEachDay[selectedDate]?[row].trainerName
-        cell.classTitle.text = classListEachDay[selectedDate]?[row].title
-        cell.trainerProfile.image = UIImage(named:classListEachDay[selectedDate]?[row].trainerProfileURL ?? "")
-
         cell.tag = indexPath.row
 
+//        cell.classTitle.text = classModelList[row].title ?? "기본"
+        cell.trainerName.text = classListEachDay[selectedDate]?[row].trainerName ?? "김종구"
+        cell.classTitle.text = classListEachDay[selectedDate]?[row].title ?? "피티가 다 똑같지 뭐"
+        cell.trainerProfile.image = UIImage(named:classListEachDay[selectedDate]?[row].trainerProfileURL ?? "defaultProfile")
         cell.classTime.text = "PM 8:30 ~ 9:30"
         
-        if classTimeVOList[cell.tag].isReservation {
+        if classModelList[cell.tag].isReservation {
             cell.cancilReservationButton.isHidden = false
             cell.reservationButton.isHidden = true
         } else {
@@ -94,7 +103,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if classTimeVOList[indexPath.row].isReservation {
+        if classModelList[indexPath.row].isReservation {
             print("\(indexPath.row) 번째 예약됨")
         } else {
             print("\(indexPath.row) 번째 예약안됨")
@@ -106,7 +115,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return classTimeVOList.count
+        return classModelList.count
     }
 }
 
@@ -116,7 +125,7 @@ extension HomeController: ClassCellDelegate {
     func didTabCancilReservation(cell: ClassCell) {
         let alert = UIAlertController(title: "예약을 취소할까요?", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "네", style: UIAlertAction.Style.default){ (action: UIAlertAction) -> Void in
-            self.classTimeVOList[cell.tag].isReservation = false
+            self.classModelList[cell.tag].isReservation = false
             cell.isReservation = false
             cell.cancilReservationButton.isHidden = true
             cell.reservationButton.isHidden = false
@@ -130,7 +139,7 @@ extension HomeController: ClassCellDelegate {
         let alert = UIAlertController(title: "예약할까요?", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "네", style: UIAlertAction.Style.default){ (action: UIAlertAction) -> Void in
             print("yes")
-            self.classTimeVOList[cell.tag].isReservation = true
+            self.classModelList[cell.tag].isReservation = true
 
             cell.isReservation = true
             cell.cancilReservationButton.isHidden = false

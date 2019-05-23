@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2147E5D22816E35007B22B8 /* classTimeVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2147E5C22816E35007B22B8 /* classTimeVO.swift */; };
+		B2147E5D22816E35007B22B8 /* classModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2147E5C22816E35007B22B8 /* classModel.swift */; };
 		B29B8122227EB91C00AACD85 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B8121227EB91C00AACD85 /* HomeController.swift */; };
 		B2E13A28227D42F0005A3391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E13A27227D42F0005A3391 /* AppDelegate.swift */; };
 		B2E13A2A227D42F0005A3391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E13A29227D42F0005A3391 /* ViewController.swift */; };
@@ -17,7 +17,7 @@
 		B2E7ECE4227FFD8D0037B8D1 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7ECE3227FFD8D0037B8D1 /* ClassCell.swift */; };
 		B2FC86D922867C5D00F6D4F6 /* AlertListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86D822867C5D00F6D4F6 /* AlertListController.swift */; };
 		B2FC86DB22867CCE00F6D4F6 /* AlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86DA22867CCE00F6D4F6 /* AlertCell.swift */; };
-		B2FC86DF22867F4E00F6D4F6 /* AlertVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86DE22867F4E00F6D4F6 /* AlertVO.swift */; };
+		B2FC86DF22867F4E00F6D4F6 /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86DE22867F4E00F6D4F6 /* AlertModel.swift */; };
 		B2FC86E122868B9800F6D4F6 /* MoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86E022868B9800F6D4F6 /* MoreController.swift */; };
 		D9280702987BFCFDAE23C38C /* Pods_WowReservation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */; };
 /* End PBXBuildFile section */
@@ -25,7 +25,7 @@
 /* Begin PBXFileReference section */
 		2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowReservation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C8A4EBD61B13699067A948 /* Pods-WowReservation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowReservation.debug.xcconfig"; path = "Target Support Files/Pods-WowReservation/Pods-WowReservation.debug.xcconfig"; sourceTree = "<group>"; };
-		B2147E5C22816E35007B22B8 /* classTimeVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classTimeVO.swift; sourceTree = "<group>"; };
+		B2147E5C22816E35007B22B8 /* classModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classModel.swift; sourceTree = "<group>"; };
 		B29B8121227EB91C00AACD85 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		B2E13A24227D42F0005A3391 /* WowReservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowReservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E13A27227D42F0005A3391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 		B2E7ECE3227FFD8D0037B8D1 /* ClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
 		B2FC86D822867C5D00F6D4F6 /* AlertListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListController.swift; sourceTree = "<group>"; };
 		B2FC86DA22867CCE00F6D4F6 /* AlertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCell.swift; sourceTree = "<group>"; };
-		B2FC86DE22867F4E00F6D4F6 /* AlertVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVO.swift; sourceTree = "<group>"; };
+		B2FC86DE22867F4E00F6D4F6 /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
 		B2FC86E022868B9800F6D4F6 /* MoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreController.swift; sourceTree = "<group>"; };
 		C609EEE6CE29F7158EB2CB59 /* Pods-WowReservation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowReservation.release.xcconfig"; path = "Target Support Files/Pods-WowReservation/Pods-WowReservation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,25 +61,6 @@
 				C609EEE6CE29F7158EB2CB59 /* Pods-WowReservation.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		B20C68E52286C91800993DBE /* VO */ = {
-			isa = PBXGroup;
-			children = (
-				B2147E5C22816E35007B22B8 /* classTimeVO.swift */,
-				B2FC86DE22867F4E00F6D4F6 /* AlertVO.swift */,
-			);
-			path = VO;
-			sourceTree = "<group>";
-		};
-		B29B8120227EB8E000AACD85 /* MainTabs */ = {
-			isa = PBXGroup;
-			children = (
-				B29B8121227EB91C00AACD85 /* HomeController.swift */,
-				B2FC86D822867C5D00F6D4F6 /* AlertListController.swift */,
-				B2FC86E022868B9800F6D4F6 /* MoreController.swift */,
-			);
-			path = MainTabs;
 			sourceTree = "<group>";
 		};
 		B29B8123227EC89F00AACD85 /* Cell */ = {
@@ -112,17 +93,44 @@
 		B2E13A26227D42F0005A3391 /* WowReservation */ = {
 			isa = PBXGroup;
 			children = (
-				B20C68E52286C91800993DBE /* VO */,
-				B29B8123227EC89F00AACD85 /* Cell */,
-				B29B8120227EB8E000AACD85 /* MainTabs */,
+				B5E42CBB229668E400D5E662 /* Model */,
+				B5E42CBA229668D200D5E662 /* View */,
+				B5E42CBC2296690400D5E662 /* Controller */,
 				B2E13A27227D42F0005A3391 /* AppDelegate.swift */,
-				B2E13A29227D42F0005A3391 /* ViewController.swift */,
 				B2E13A2B227D42F0005A3391 /* Main.storyboard */,
 				B2E13A2E227D42F1005A3391 /* Assets.xcassets */,
 				B2E13A30227D42F1005A3391 /* LaunchScreen.storyboard */,
 				B2E13A33227D42F1005A3391 /* Info.plist */,
 			);
 			path = WowReservation;
+			sourceTree = "<group>";
+		};
+		B5E42CBA229668D200D5E662 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B29B8123227EC89F00AACD85 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5E42CBB229668E400D5E662 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2147E5C22816E35007B22B8 /* classModel.swift */,
+				B2FC86DE22867F4E00F6D4F6 /* AlertModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5E42CBC2296690400D5E662 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B29B8121227EB91C00AACD85 /* HomeController.swift */,
+				B2FC86D822867C5D00F6D4F6 /* AlertListController.swift */,
+				B2FC86E022868B9800F6D4F6 /* MoreController.swift */,
+				B2E13A29227D42F0005A3391 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		DAC9A65230D68869E2F88DC0 /* Frameworks */ = {
@@ -208,16 +216,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WowReservation/Pods-WowReservation-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-WowReservation/Pods-WowReservation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-WowReservation/Pods-WowReservation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,11 +258,11 @@
 			files = (
 				B2FC86DB22867CCE00F6D4F6 /* AlertCell.swift in Sources */,
 				B2E13A2A227D42F0005A3391 /* ViewController.swift in Sources */,
-				B2147E5D22816E35007B22B8 /* classTimeVO.swift in Sources */,
+				B2147E5D22816E35007B22B8 /* classModel.swift in Sources */,
 				B2FC86D922867C5D00F6D4F6 /* AlertListController.swift in Sources */,
 				B2FC86E122868B9800F6D4F6 /* MoreController.swift in Sources */,
 				B2E13A28227D42F0005A3391 /* AppDelegate.swift in Sources */,
-				B2FC86DF22867F4E00F6D4F6 /* AlertVO.swift in Sources */,
+				B2FC86DF22867F4E00F6D4F6 /* AlertModel.swift in Sources */,
 				B2E7ECE4227FFD8D0037B8D1 /* ClassCell.swift in Sources */,
 				B29B8122227EB91C00AACD85 /* HomeController.swift in Sources */,
 			);

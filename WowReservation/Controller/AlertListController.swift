@@ -10,12 +10,12 @@ import UIKit
 
 class AlertListController: UIViewController {
     @IBOutlet weak var alertListTableView: UITableView!
-    var AlertVOList = [AlertVO]()
+    var AlertVOList = [AlertModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         for i in 1 ... 9 {
-            let alertVO = AlertVO()
+            let alertVO = AlertModel()
             alertVO.isRead = false
             alertVO.content = "Danny님이 프로젝트에 참여합니다\(i)"
             AlertVOList.append(alertVO)

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ClassTimeVO {
+class ClassModel {
     var title: String?
     var participatingMember: Int?
     var limitMember: Int?
@@ -16,9 +16,9 @@ class ClassTimeVO {
     var trainerProfileURL: String?
     var trainerName: String?
     
-    var date: String?
-    var startTime: Double?
-    var endTime: Double?
+    var date: String? // yy/nn/dd
+    var startTime: int? // hh/mm 시간은 24시간을 쓰고 am, pm 계산
+    var endTime: int? // hh/mm
 
     var isReservation: Bool = false
 }
