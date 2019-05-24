@@ -19,6 +19,8 @@
 		B2FC86DB22867CCE00F6D4F6 /* AlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86DA22867CCE00F6D4F6 /* AlertCell.swift */; };
 		B2FC86DF22867F4E00F6D4F6 /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86DE22867F4E00F6D4F6 /* AlertModel.swift */; };
 		B2FC86E122868B9800F6D4F6 /* MoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86E022868B9800F6D4F6 /* MoreController.swift */; };
+		B5E42CBE22968EB400D5E662 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E42CBD22968EB400D5E662 /* LoginViewController.swift */; };
+		B5E42CC32296941F00D5E662 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E42CC22296941F00D5E662 /* KakaoOpenSDK.framework */; };
 		D9280702987BFCFDAE23C38C /* Pods_WowReservation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		B2FC86DA22867CCE00F6D4F6 /* AlertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCell.swift; sourceTree = "<group>"; };
 		B2FC86DE22867F4E00F6D4F6 /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
 		B2FC86E022868B9800F6D4F6 /* MoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreController.swift; sourceTree = "<group>"; };
+		B5E42CBD22968EB400D5E662 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B5E42CC22296941F00D5E662 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = Pods/KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		C609EEE6CE29F7158EB2CB59 /* Pods-WowReservation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowReservation.release.xcconfig"; path = "Target Support Files/Pods-WowReservation/Pods-WowReservation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9280702987BFCFDAE23C38C /* Pods_WowReservation.framework in Frameworks */,
+				B5E42CC32296941F00D5E662 /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B29B8121227EB91C00AACD85 /* HomeController.swift */,
+				B5E42CBD22968EB400D5E662 /* LoginViewController.swift */,
 				B2FC86D822867C5D00F6D4F6 /* AlertListController.swift */,
 				B2FC86E022868B9800F6D4F6 /* MoreController.swift */,
 				B2E13A29227D42F0005A3391 /* ViewController.swift */,
@@ -137,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */,
+				B5E42CC22296941F00D5E662 /* KakaoOpenSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -264,6 +271,7 @@
 				B2E13A28227D42F0005A3391 /* AppDelegate.swift in Sources */,
 				B2FC86DF22867F4E00F6D4F6 /* AlertModel.swift in Sources */,
 				B2E7ECE4227FFD8D0037B8D1 /* ClassCell.swift in Sources */,
+				B5E42CBE22968EB400D5E662 /* LoginViewController.swift in Sources */,
 				B29B8122227EB91C00AACD85 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +421,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 598JEMFJNW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
 				INFOPLIST_FILE = WowReservation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,6 +444,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 598JEMFJNW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
 				INFOPLIST_FILE = WowReservation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -17,8 +17,8 @@ class ClassModel {
     var trainerName: String?
     
     var date: String? // yy/nn/dd
-    var startTime: int? // hh/mm 시간은 24시간을 쓰고 am, pm 계산
-    var endTime: int? // hh/mm
+    var startTime: Int? // hh/mm 시간은 24시간을 쓰고 am, pm 계산
+    var endTime: Int? // hh/mm
 
     var isReservation: Bool = false
 }

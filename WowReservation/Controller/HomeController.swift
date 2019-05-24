@@ -44,13 +44,26 @@ class HomeController: UIViewController {
 //        calendar.scope = .week
 //        calendar.allowsMultipleSelection = true;
         
+//        var h: Int;
+//        var m: Int;
         
         // 더미 삽입
         for i in 1 ... 9 {
+
             let classModel = ClassModel()
-            classModel.title = "헬게이트 오픈 PT\(i)"
-            classModel.trainerName = "김종국"
-            classModel.trainerProfileURL = "profile"
+
+            if i % 2 == 1 {
+                classModel.title = "헬게이트 오픈 PT\(i)"
+                classModel.trainerName = "김종국"
+                classModel.trainerProfileURL = "profile"
+                classModel.date = "23/05/2019"
+            } else {
+                classModel.title = "크로스피터\(i)"
+                classModel.trainerName = "국종김"
+                classModel.date = "23/05/2019"
+            }
+            classModel.startTime = i
+
             classModelList.append(classModel)
         }
         
@@ -62,6 +75,7 @@ class HomeController: UIViewController {
             classModel.title = "군대식 다이어트\(i)"
             classModel.trainerName = "대니강"
             classModel.trainerProfileURL = "danny"
+            classModel.startTime = i
 
             classModelList.append(classModel)
         }
@@ -76,6 +90,10 @@ extension HomeController: FSCalendarDelegate {
     }
 }
 
+extension HomeController: FSCalendarDataSource {
+    
+}
+
 extension HomeController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "classCell", for: indexPath) as! ClassCell
@@ -86,11 +104,12 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         cell.classCellDelegate = self
         cell.tag = indexPath.row
 
-//        cell.classTitle.text = classModelList[row].title ?? "기본"
         cell.trainerName.text = classListEachDay[selectedDate]?[row].trainerName ?? "김종구"
         cell.classTitle.text = classListEachDay[selectedDate]?[row].title ?? "피티가 다 똑같지 뭐"
         cell.trainerProfile.image = UIImage(named:classListEachDay[selectedDate]?[row].trainerProfileURL ?? "defaultProfile")
-        cell.classTime.text = "PM 8:30 ~ 9:30"
+//        cell.classTime.text = "PM 8:30 ~ 9:30"
+        cell.classTime.text = "\(classListEachDay[selectedDate]?[row].startTime ?? 0):00 ~"
+
         
         if classModelList[cell.tag].isReservation {
             cell.cancilReservationButton.isHidden = false
@@ -120,8 +139,6 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension HomeController: ClassCellDelegate {
-
-    
     func didTabCancilReservation(cell: ClassCell) {
         let alert = UIAlertController(title: "예약을 취소할까요?", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "네", style: UIAlertAction.Style.default){ (action: UIAlertAction) -> Void in
@@ -144,7 +161,6 @@ extension HomeController: ClassCellDelegate {
             cell.isReservation = true
             cell.cancilReservationButton.isHidden = false
             cell.reservationButton.isHidden = true
-            
         })
         alert.addAction(UIAlertAction(title: "아니오", style: .cancel, handler: nil))
         self.present(alert, animated: true)
