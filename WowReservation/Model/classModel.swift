@@ -9,6 +9,9 @@
 import Foundation
 
 class ClassModel {
+    
+    var classKind: classKind?
+
     var title: String?
     var participatingMember: Int?
     var limitMember: Int?
