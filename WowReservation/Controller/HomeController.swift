@@ -47,7 +47,7 @@ class HomeController: UIViewController {
 //        var h: Int;
 //        var m: Int;
         
-        // 더미 삽입ㄹ
+        // 더미 삽입check author
         for i in 1 ... 9 {
 
             let classModel = ClassModel()
