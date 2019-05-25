@@ -51,6 +51,7 @@ class HomeController: UIViewController {
         for i in 1 ... 9 {
 
             let classModel = ClassModel()
+            classModel.classKind = .willReserve
 
             if i % 2 == 1 {
                 classModel.title = "헬게이트 오픈 PT\(i)"
@@ -72,14 +73,31 @@ class HomeController: UIViewController {
 
         for i in 1 ... 9 {
             let classModel = ClassModel()
+            classModel.classKind = .willReserve
             classModel.title = "군대식 다이어트\(i)"
             classModel.trainerName = "대니강"
             classModel.trainerProfileURL = "danny"
             classModel.startTime = i
-
             classModelList.append(classModel)
         }
         classListEachDay["22/05/2019"] = classModelList
+        
+        classModelList.removeAll()
+        
+        let classModel = ClassModel()
+        classModel.classKind = .didNotReserve
+        classModelList.append(classModel)
+        classListEachDay["24/05/2019"] = classModelList
+        classModelList.removeAll()
+        
+        let classModel2 = ClassModel()
+        classModel.classKind = .didReserve
+        classModel.title = "군대식 다이어트"
+        classModel.trainerName = "대니강"
+        classModel.trainerProfileURL = "danny"
+        
+        classModelList.append(classModel2)
+        classListEachDay["25/05/2019"] = classModelList
     }
 }
 
@@ -96,29 +114,74 @@ extension HomeController: FSCalendarDataSource {
 
 extension HomeController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "classCell", for: indexPath) as! ClassCell
-        let row = indexPath.row
-        
         let selectedDate = dateFormatter.string(from: self.calendar.selectedDate ?? self.calendar.today!)
-        
-        cell.classCellDelegate = self
-        cell.tag = indexPath.row
+        let row = indexPath.row
 
-        cell.trainerName.text = classListEachDay[selectedDate]?[row].trainerName ?? "김종구"
-        cell.classTitle.text = classListEachDay[selectedDate]?[row].title ?? "피티가 다 똑같지 뭐"
-        cell.trainerProfile.image = UIImage(named:classListEachDay[selectedDate]?[row].trainerProfileURL ?? "defaultProfile")
-//        cell.classTime.text = "PM 8:30 ~ 9:30"
-        cell.classTime.text = "\(classListEachDay[selectedDate]?[row].startTime ?? 0):00 ~"
+        switch classListEachDay[selectedDate]?[row].classKind {
+            
+        case .willReserve?:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "willReserveClassCell", for: indexPath) as! ClassCell
+            cell.classCellDelegate = self
+            cell.tag = indexPath.row
+            
+            cell.trainerName.text = classListEachDay[selectedDate]?[row].trainerName ?? "김종구"
+            cell.classTitle.text = classListEachDay[selectedDate]?[row].title ?? "피티가 다 똑같지 뭐"
+            cell.trainerProfile.image = UIImage(named:classListEachDay[selectedDate]?[row].trainerProfileURL ?? "defaultProfile")
+            cell.classTime.text = "\(classListEachDay[selectedDate]?[row].startTime ?? 0):00 ~"
+            
+            if classModelList[cell.tag].isReservation {
+                cell.cancilReservationButton.isHidden = false
+                cell.reservationButton.isHidden = true
+            } else {
+                cell.cancilReservationButton.isHidden = true
+                cell.reservationButton.isHidden = false
+            }
+            return cell
+            
+        case .didReserve?:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "didReserveClassCell", for: indexPath) as! ClassCell
+            
+            cell.classCellDelegate = self
+            cell.tag = indexPath.row
+            
+            cell.trainerName.text = classListEachDay[selectedDate]?[row].trainerName ?? "김종구"
+            cell.classTitle.text = classListEachDay[selectedDate]?[row].title ?? "피티가 다 똑같지 뭐"
+            cell.trainerProfile.image = UIImage(named:classListEachDay[selectedDate]?[row].trainerProfileURL ?? "defaultProfile")
+            cell.classTime.text = "\(classListEachDay[selectedDate]?[row].startTime ?? 0):00 ~"
+            return cell
+            
+        case .didNotReserve?:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "didNotReserveClassCell", for: indexPath) as! ClassCell
+            return cell
 
-        
-        if classModelList[cell.tag].isReservation {
-            cell.cancilReservationButton.isHidden = false
-            cell.reservationButton.isHidden = true
-        } else {
-            cell.cancilReservationButton.isHidden = true
-            cell.reservationButton.isHidden = false
+            
+        default:
+            let cell = UITableViewCell()
+            return cell
         }
-        return cell
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "classCell", for: indexPath) as! ClassCell
+//        let row = indexPath.row
+//
+//        let selectedDate = dateFormatter.string(from: self.calendar.selectedDate ?? self.calendar.today!)
+//
+//        cell.classCellDelegate = self
+//        cell.tag = indexPath.row
+//
+//        cell.trainerName.text = classListEachDay[selectedDate]?[row].trainerName ?? "김종구"
+//        cell.classTitle.text = classListEachDay[selectedDate]?[row].title ?? "피티가 다 똑같지 뭐"
+//        cell.trainerProfile.image = UIImage(named:classListEachDay[selectedDate]?[row].trainerProfileURL ?? "defaultProfile")
+////        cell.classTime.text = "PM 8:30 ~ 9:30"
+//        cell.classTime.text = "\(classListEachDay[selectedDate]?[row].startTime ?? 0):00 ~"
+//
+//
+//        if classModelList[cell.tag].isReservation {
+//            cell.cancilReservationButton.isHidden = false
+//            cell.reservationButton.isHidden = true
+//        } else {
+//            cell.cancilReservationButton.isHidden = true
+//            cell.reservationButton.isHidden = false
+//        }
+//        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
