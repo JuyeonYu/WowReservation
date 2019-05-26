@@ -19,7 +19,6 @@
 		B2FC86DB22867CCE00F6D4F6 /* AlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86DA22867CCE00F6D4F6 /* AlertCell.swift */; };
 		B2FC86DF22867F4E00F6D4F6 /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86DE22867F4E00F6D4F6 /* AlertModel.swift */; };
 		B2FC86E122868B9800F6D4F6 /* MoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC86E022868B9800F6D4F6 /* MoreController.swift */; };
-		B501E7A1229944D2003DAF7E /* ClassEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501E7A0229944D2003DAF7E /* ClassEnum.swift */; };
 		B5E42CBE22968EB400D5E662 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E42CBD22968EB400D5E662 /* LoginViewController.swift */; };
 		B5E42CC32296941F00D5E662 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E42CC22296941F00D5E662 /* KakaoOpenSDK.framework */; };
 		D9280702987BFCFDAE23C38C /* Pods_WowReservation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4D346D1D24FE76A73BACFE /* Pods_WowReservation.framework */; };
@@ -42,7 +41,6 @@
 		B2FC86DA22867CCE00F6D4F6 /* AlertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCell.swift; sourceTree = "<group>"; };
 		B2FC86DE22867F4E00F6D4F6 /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
 		B2FC86E022868B9800F6D4F6 /* MoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreController.swift; sourceTree = "<group>"; };
-		B501E7A0229944D2003DAF7E /* ClassEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassEnum.swift; sourceTree = "<group>"; };
 		B5E42CBD22968EB400D5E662 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B5E42CC22296941F00D5E662 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = Pods/KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		C609EEE6CE29F7158EB2CB59 /* Pods-WowReservation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowReservation.release.xcconfig"; path = "Target Support Files/Pods-WowReservation/Pods-WowReservation.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				B2147E5C22816E35007B22B8 /* classModel.swift */,
-				B501E7A0229944D2003DAF7E /* ClassEnum.swift */,
 				B2FC86DE22867F4E00F6D4F6 /* AlertModel.swift */,
 			);
 			path = Model;
@@ -272,7 +269,6 @@
 				B2FC86D922867C5D00F6D4F6 /* AlertListController.swift in Sources */,
 				B2FC86E122868B9800F6D4F6 /* MoreController.swift in Sources */,
 				B2E13A28227D42F0005A3391 /* AppDelegate.swift in Sources */,
-				B501E7A1229944D2003DAF7E /* ClassEnum.swift in Sources */,
 				B2FC86DF22867F4E00F6D4F6 /* AlertModel.swift in Sources */,
 				B2E7ECE4227FFD8D0037B8D1 /* ClassCell.swift in Sources */,
 				B5E42CBE22968EB400D5E662 /* LoginViewController.swift in Sources */,
