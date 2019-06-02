@@ -25,7 +25,6 @@ class HomeController: UIViewController {
         
         partocopatingCenterLogo.image = UIImage(named: "defaultCenterLogo")
         participatingCenterName.text = "블랙드래곤"
-
 /*
          날짜별로 각기 다른 클래스를 테이블뷰로 조회해야함
          
@@ -88,6 +87,8 @@ class HomeController: UIViewController {
 }
 
 extension HomeController: FSCalendarDelegate {
+    
+    // 날짜를 탭하면 타임테이블을 다시 가져옴
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         print("didSelect: \(date)")
         self.classTimeTableview.reloadData()
