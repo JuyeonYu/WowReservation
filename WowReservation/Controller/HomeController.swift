@@ -8,6 +8,7 @@
 
 import UIKit
 import FSCalendar
+import Alamofire
 
 class HomeController: UIViewController {
     @IBOutlet weak var calendar: FSCalendar!
@@ -23,8 +24,12 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let locale = NSTimeZone.init(abbreviation: "KST")
+        
         partocopatingCenterLogo.image = UIImage(named: "defaultCenterLogo")
         participatingCenterName.text = "블랙드래곤"
+        
+        
 /*
          날짜별로 각기 다른 클래스를 테이블뷰로 조회해야함
          
@@ -83,14 +88,47 @@ class HomeController: UIViewController {
             classModelList.append(classModel)
         }
         classListEachDay["22/05/2019"] = classModelList
+        
+        getClassData()
+        
+    }
+    
+    func getClassData() {
+        // when select date, connect to server
+        let current = calendar.today
+        let startDate = current?.startOfMonth()
+        let endDate = current?.endOfMonth()
+        
+        let parameters : [String : Any] = [
+            "userId":"remake111",   // 내 아이디 (어드민일 경우 예약자 리스트가 포함)
+//            "startDate":, // 시작 날짜 (unix timestamp)
+//            "endDate":, // 종료 날짜 (unix timestamp)
+    //            "ownerId":, // (Optional) 선생 아이디 선택
+        ]
+        
+        Alamofire.request(
+            "http://ucband.ucwaremobile.com:8899/center/1/classes",
+            method: .get,
+            parameters: parameters,
+            encoding: JSONEncoding.default,
+            headers: ["Content-Type":"application/json", "Accept":"application/json"])
+            .validate(statusCode: 200..<300)
+            .responseJSON {
+                (response) in
+                if let JSON = response.result.value {
+                    print(JSON)
+                }
+        }
+
     }
 }
 
 extension HomeController: FSCalendarDelegate {
-    
-    // 날짜를 탭하면 타임테이블을 다시 가져옴
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        print("didSelect: \(date)")
+
+        // utc + 9hour
+        print("didSelect2: \(date+32400)")
+
         self.classTimeTableview.reloadData()
     }
 }
@@ -117,7 +155,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         cell.classCellDelegate = self
         cell.tag = indexPath.row
         
-        cell.trainerName.text = classListEachDay[selectedDate]?[row].trainerName ?? "김종구"
+//        cell.trainerName.text = classListEachDay[selectedDate]?[row].trainerName ?? "김종구"
         cell.classTitle.text = classListEachDay[selectedDate]?[row].title ?? "피티가 다 똑같지 뭐"
         cell.trainerProfile.image = UIImage(named:classListEachDay[selectedDate]?[row].trainerProfileURL ?? "defaultProfile")
         cell.classTime.text = "\(classListEachDay[selectedDate]?[row].startTime ?? 0):00 ~"
@@ -141,7 +179,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 70
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -177,4 +215,20 @@ extension HomeController: ClassCellDelegate {
         self.present(alert, animated: true)
     }
     
+}
+
+extension Date {
+    var month: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM"
+        return dateFormatter.string(from: self)
+    }
+    
+    func startOfMonth() -> Date {
+        return Calendar.current.date(from: Calendar.current.dateComponents([.year, .month], from: Calendar.current.startOfDay(for: self)))!+32400
+    }
+
+    func endOfMonth() -> Date {
+        return Calendar.current.date(byAdding: DateComponents(month: 1, day: -1), to: self.startOfMonth())!+32400
+    }
 }
