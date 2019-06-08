@@ -33,8 +33,7 @@ class CreateClassController: UIViewController {
         
         // create class
         Alamofire.request(
-//            "http://ucband.ucwaremobile.com:8899/center/1/class",
-            "http://10.66.114.34:8899/center/1/class",
+            "http://ucband.ucwaremobile.com:8899/center/1/class",
             method: .post,
             parameters: parameters,
             encoding: JSONEncoding.default,
@@ -48,6 +47,11 @@ class CreateClassController: UIViewController {
         }
         
     }
+    
+    // tab around keyboard hide
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
 }
 
 extension Date {
@@ -59,3 +63,4 @@ extension Date {
         self = Date(timeIntervalSince1970: TimeInterval(milliseconds) / 1000)
     }
 }
+
