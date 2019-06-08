@@ -258,63 +258,63 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehw-zS-Tb2">
-                                <rect key="frame" x="16" y="142" width="343" height="30"/>
+                                <rect key="frame" x="16" y="104" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MsA-U5-BBA">
-                                <rect key="frame" x="16" y="229" width="343" height="30"/>
+                                <rect key="frame" x="16" y="191" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="트레이너 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-vM-iEu">
-                                <rect key="frame" x="16" y="113" width="93" height="21"/>
+                                <rect key="frame" x="16" y="75" width="93" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jd-mB-cIV">
-                                <rect key="frame" x="16" y="200" width="30" height="21"/>
+                                <rect key="frame" x="16" y="162" width="30" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시작 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wp-NN-Ytn">
-                                <rect key="frame" x="16" y="292" width="64" height="21"/>
+                                <rect key="frame" x="16" y="254" width="64" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Kw-fC-tc7">
-                                <rect key="frame" x="16" y="321" width="343" height="150"/>
+                                <rect key="frame" x="16" y="283" width="343" height="150"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="581149069.00820899">
                                     <!--2019-06-02 06:17:49 +0000-->
                                 </date>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="종료 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wM4-Qx-4PR">
-                                <rect key="frame" x="16" y="479" width="64" height="21"/>
+                                <rect key="frame" x="16" y="441" width="64" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GQU-mI-uBB">
-                                <rect key="frame" x="16" y="508" width="343" height="150"/>
+                                <rect key="frame" x="16" y="470" width="343" height="150"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="581149069.00820899">
                                     <!--2019-06-02 06:17:49 +0000-->
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VW9-IJ-WwX">
-                                <rect key="frame" x="172" y="666" width="30" height="30"/>
+                                <rect key="frame" x="172" y="628" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="생성"/>
                                 <connections>
@@ -345,71 +345,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-GJ-7bU" customClass="FSCalendar">
-                                <rect key="frame" x="20" y="102" width="335" height="312"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-GJ-7bU" customClass="FSCalendar">
+                                <rect key="frame" x="20" y="102" width="335" height="335"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="335" id="0Q3-h6-HSJ"/>
+                                    <constraint firstAttribute="width" constant="335" id="euc-FG-hMR"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="22n-nO-giG" id="Wvh-kx-QYK"/>
                                     <outlet property="delegate" destination="22n-nO-giG" id="amp-F2-a0L"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="블랙드레곤 크로스핏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsX-nc-Qfy">
+                                <rect key="frame" x="74" y="59" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SuJ-Ks-uNz">
+                                <rect key="frame" x="16" y="44" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Bp8-jx-DIt"/>
+                                    <constraint firstAttribute="height" constant="50" id="t9O-8e-Zb6"/>
+                                </constraints>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GLG-UM-jhZ">
-                                <rect key="frame" x="0.0" y="422" width="374" height="347"/>
+                                <rect key="frame" x="0.0" y="445" width="375" height="284"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="347" id="Ici-O1-kvF"/>
+                                    <constraint firstAttribute="width" constant="375" id="d8l-Ku-v5o"/>
+                                    <constraint firstAttribute="height" constant="284" id="pkd-tj-0Yi"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="willReserveClassCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="willReserveClassCell" rowHeight="116" id="Qu3-yt-iqB" customClass="ClassCell" customModule="WowReservation" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="116"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="willReserveClassCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="willReserveClassCell" rowHeight="70" id="Qu3-yt-iqB" customClass="ClassCell" customModule="WowReservation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qu3-yt-iqB" id="ea2-t5-4Gt" customClass="ClassCell" customModule="WowReservation" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="115.66666666666667"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h76-tJ-JAy">
-                                                    <rect key="frame" x="18" y="12" width="50" height="50"/>
+                                                    <rect key="frame" x="15" y="10" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="김이박" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoB-e2-4Nt">
-                                                    <rect key="frame" x="21" y="70" width="45" height="21"/>
+                                                    <rect key="frame" x="75" y="10" width="45" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obi-z1-5bt">
-                                                    <rect key="frame" x="326" y="73" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="예약"/>
-                                                    <connections>
-                                                        <action selector="didTabReservation:" destination="Qu3-yt-iqB" eventType="touchUpInside" id="d54-Gq-egP"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="지옥에서 온 다이어트 PT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qq-bx-3BC">
-                                                    <rect key="frame" x="76" y="12" width="167" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="다이어트 PT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qq-bx-3BC">
+                                                    <rect key="frame" x="134" y="10" width="195" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PM 07:30 ~ 08:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIH-QW-EoP">
-                                                    <rect key="frame" x="76" y="41" width="280" height="24"/>
+                                                    <rect key="frame" x="75" y="35" width="163" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gP-5O-7la">
-                                                    <rect key="frame" x="328" y="12" width="26" height="21"/>
+                                                    <rect key="frame" x="339" y="10" width="26" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obi-z1-5bt">
+                                                    <rect key="frame" x="337" y="29" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="예약"/>
+                                                    <connections>
+                                                        <action selector="didTabReservation:" destination="Qu3-yt-iqB" eventType="touchUpInside" id="d54-Gq-egP"/>
+                                                    </connections>
+                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yp-wh-Inn">
-                                                    <rect key="frame" x="326" y="73" width="30" height="30"/>
+                                                    <rect key="frame" x="337" y="29" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="취소"/>
                                                     <connections>
@@ -428,56 +445,15 @@
                                             <outlet property="trainerProfile" destination="h76-tJ-JAy" id="Wcu-ei-Isz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="didReserveClassCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="didReserveClassCell" rowHeight="97" id="Koe-ea-fwj" customClass="ClassCell" customModule="WowReservation" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="144" width="374" height="97"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Koe-ea-fwj" id="P2u-Qd-Sy2" customClass="ClassCell" customModule="WowReservation" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="96.666666666666671"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEm-uF-gP1">
-                                                    <rect key="frame" x="18" y="9" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="김이박" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xza-6z-ITg">
-                                                    <rect key="frame" x="21" y="67" width="45" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="지옥에서 온 다이어트 PT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJN-PE-BH4">
-                                                    <rect key="frame" x="76" y="9" width="167" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PM 07:30 ~ 08:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJA-Xm-z3b">
-                                                    <rect key="frame" x="76" y="38" width="280" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="classTime" destination="AJA-Xm-z3b" id="EW4-2B-JGt"/>
-                                            <outlet property="classTitle" destination="NJN-PE-BH4" id="S6d-E5-TBf"/>
-                                            <outlet property="trainerName" destination="xza-6z-ITg" id="Ekj-FQ-CfC"/>
-                                            <outlet property="trainerProfile" destination="nEm-uF-gP1" id="N8G-fr-ys7"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="didNotReserveClassCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="didNotReserveClassCell" rowHeight="116" id="JNh-e4-lrv" customClass="ClassCell" customModule="WowReservation" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="241" width="374" height="116"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="didNotReserveClassCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="didNotReserveClassCell" rowHeight="70" id="JNh-e4-lrv" customClass="ClassCell" customModule="WowReservation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="98" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JNh-e4-lrv" id="mbr-hY-tPz" customClass="ClassCell" customModule="WowReservation" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="115.66666666666667"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="참여했던 내용이 없습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL3-hT-Taj">
-                                                    <rect key="frame" x="99" y="47" width="176" height="21"/>
+                                                    <rect key="frame" x="99" y="24" width="176" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -492,23 +468,22 @@
                                     <outlet property="delegate" destination="22n-nO-giG" id="up3-TB-XV3"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="블랙드레곤 크로스핏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsX-nc-Qfy">
-                                <rect key="frame" x="74" y="59" width="137" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SuJ-Ks-uNz">
-                                <rect key="frame" x="16" y="44" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="GLG-UM-jhZ" firstAttribute="leading" secondItem="RRy-z2-ZOZ" secondAttribute="leading" id="J0D-Bf-RAi"/>
-                            <constraint firstItem="RRy-z2-ZOZ" firstAttribute="trailing" secondItem="GLG-UM-jhZ" secondAttribute="trailing" constant="1" id="Kvx-Es-CXh"/>
-                            <constraint firstItem="GLG-UM-jhZ" firstAttribute="bottom" secondItem="RRy-z2-ZOZ" secondAttribute="bottom" constant="84" id="vE1-J7-eDu"/>
+                            <constraint firstItem="Zo7-GJ-7bU" firstAttribute="top" secondItem="SuJ-Ks-uNz" secondAttribute="bottom" constant="8" id="7TR-QV-ddg"/>
+                            <constraint firstItem="Zo7-GJ-7bU" firstAttribute="top" secondItem="rsX-nc-Qfy" secondAttribute="bottom" constant="22" id="8TC-He-gqh"/>
+                            <constraint firstItem="RRy-z2-ZOZ" firstAttribute="trailing" secondItem="Zo7-GJ-7bU" secondAttribute="trailing" constant="20" id="Feq-KI-BVM"/>
+                            <constraint firstItem="Zo7-GJ-7bU" firstAttribute="top" secondItem="SuJ-Ks-uNz" secondAttribute="bottom" constant="8" id="K03-6k-Zbw"/>
+                            <constraint firstItem="rsX-nc-Qfy" firstAttribute="top" secondItem="RRy-z2-ZOZ" secondAttribute="top" constant="15" id="MBj-hv-K4i"/>
+                            <constraint firstItem="SuJ-Ks-uNz" firstAttribute="top" secondItem="RRy-z2-ZOZ" secondAttribute="top" id="N7z-tb-pWJ"/>
+                            <constraint firstItem="GLG-UM-jhZ" firstAttribute="top" secondItem="Zo7-GJ-7bU" secondAttribute="bottom" constant="8" id="YqW-gT-vbr"/>
+                            <constraint firstItem="Zo7-GJ-7bU" firstAttribute="leading" secondItem="RRy-z2-ZOZ" secondAttribute="leading" constant="20" id="ZzS-77-YaC"/>
+                            <constraint firstItem="GLG-UM-jhZ" firstAttribute="trailing" secondItem="RRy-z2-ZOZ" secondAttribute="trailing" id="hbI-sj-fkM"/>
+                            <constraint firstItem="RRy-z2-ZOZ" firstAttribute="trailing" secondItem="rsX-nc-Qfy" secondAttribute="trailing" constant="164" id="kaY-Oy-meP"/>
+                            <constraint firstItem="GLG-UM-jhZ" firstAttribute="leading" secondItem="RRy-z2-ZOZ" secondAttribute="leading" id="qg9-QR-1dO"/>
+                            <constraint firstItem="SuJ-Ks-uNz" firstAttribute="leading" secondItem="RRy-z2-ZOZ" secondAttribute="leading" constant="16" id="sV6-2m-SKh"/>
+                            <constraint firstItem="rsX-nc-Qfy" firstAttribute="leading" secondItem="SuJ-Ks-uNz" secondAttribute="trailing" constant="8" id="uSs-hQ-SiV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RRy-z2-ZOZ"/>
                     </view>
