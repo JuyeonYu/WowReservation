@@ -25,6 +25,23 @@ class HomeController: UIViewController {
         super.viewDidLoad()
         
         let locale = NSTimeZone.init(abbreviation: "KST")
+        print(1234567890)
+//        가입한 센터의 정보를 가져옴
+        
+        let url = "http://13.125.5.6:5000/center?id=remake111"
+
+        Alamofire.request(url).responseJSON{ (response) in
+            switch response.result {
+            case .success:
+                if let JSON = response.result.value {
+                    print("success")
+                    print(JSON)
+                }
+
+            case .failure:
+                print("failure")
+            }
+        }
         
         partocopatingCenterLogo.image = UIImage(named: "defaultCenterLogo")
         participatingCenterName.text = "블랙드래곤"
